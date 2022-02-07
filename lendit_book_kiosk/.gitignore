@@ -41,6 +41,3 @@ core
 gradlew
 
 
-### Remove Bin Contents  ###
-bin/main/**
-bin/test/**
