@@ -31,7 +31,8 @@
 		"redhat.fabric8-analytics",
 		"ms-azuretools.vscode-docker",
 		"pivotal.vscode-boot-dev-pack",
-		"vscjava.vscode-gradle"
+		"vscjava.vscode-gradle",
+		"davidanson.vscode-markdownlint"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
