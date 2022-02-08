@@ -7,7 +7,7 @@ on:
       - 'release*'
 
 jobs:
-  test:
+  build:
     name: Unit Test-Build-${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
@@ -24,7 +24,7 @@ jobs:
           architecture: x64
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
-        working-directory: lendit_book_kiosk
+        working-directory: ./lendit_book_kiosk
       - name: Execute Gradle build
         run: ./lendit_book_kiosk/gradlew build
-        working-directory: lendit_book_kiosk
+        working-directory: ./lendit_book_kiosk
