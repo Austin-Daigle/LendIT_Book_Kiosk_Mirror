@@ -1,3 +1,4 @@
+// plugins dependencies
 plugins {
 	id 'org.springframework.boot' version '2.6.3'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
@@ -30,11 +31,21 @@ dependencies {
 // tasks.named('test') {
 // 	useJUnitPlatform()
 // }
-
-task checkGradleVersion(type: Wrapper){
-	gradleVersion = '7.3.3'
+task getwrapper(type: Wrapper) {
+    gradleVersion = '7.3.3'
+    archiveBase = 'PROJECT'
+    jarFile = './gradle/wrapper/gradle-wrapper.jar'
+	// propertiesFile = './gradle/wrapper/gradle-wrapper.properties'
 }
 
+tasks.register('printProps') {
+    doLast {
+        println commandLineProjectProp
+        println gradlePropertiesProp
+        println systemProjectProp
+        println System.properties['system']
+    }
+}
 
 tasks.register('list'){
 	doFirst{
@@ -42,3 +53,6 @@ tasks.register('list'){
 		FileCollection.findAll() 
 	}
 }
+
+
+
