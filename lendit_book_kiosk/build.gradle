@@ -22,10 +22,23 @@ dependencies {
 	testImplementation 'ch.qos.logback:logback-classic:0.9.26'
 	// https://mvnrepository.com/artifact/org.slf4j/slf4j-api
 	implementation 'org.slf4j:slf4j-api:1.7.35'
+	testImplementation 'junit:junit:4.13'
 
 
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
+// tasks.named('test') {
+// 	useJUnitPlatform()
+// }
+
+task checkGradleVersion(type: Wrapper){
+	gradleVersion = '7.3.3'
+}
+
+
+tasks.register('list'){
+	doFirst{
+		// Iterate over the files in the collection
+		FileCollection.findAll() 
+	}
 }
