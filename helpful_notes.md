@@ -5,7 +5,7 @@
 ```bash
 git checkout -b <user branch name>      # gets you "on branch "
 git fetch origin        # gets you up to date with origin
-git merge origin/master
+git merge origin/main
 
 ```
 
