@@ -3,7 +3,7 @@
 ## Merge MAIN with USER branch on a daily basis
 
 ```bash
-git checkout -b <user branch name>      # gets you "on branch "
+git checkout <user branch name>      # gets you "on branch "
 git fetch origin        # gets you up to date with origin
 git merge origin/main
 
