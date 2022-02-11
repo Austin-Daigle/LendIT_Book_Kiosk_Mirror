@@ -21,6 +21,7 @@ public class LenditBookKioskApplication {
 		log.info("------------------- Application LendIT Book Kiosk has started...");
 	}
 
+	
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
