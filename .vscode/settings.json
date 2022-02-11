@@ -1,0 +1,28 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "sqltools.connections": [
+        {
+            "name": "Container database",
+            "driver": "MySQL",
+            "previewLimit": 50,
+            "server": "127.0.0.1",
+            "port": 3306,
+            "database": "Lendit_Book_Kiosk",
+            "username": "root",
+            "password": "developer"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "127.0.0.1",
+            "port": 3306,
+            "askForPassword": true,
+            "driver": "MySQL",
+            "name": "lendit book kiosk",
+            "database": "Lendit_Book_Kiosk",
+            "username": "root"
+        }
+    ]
+}

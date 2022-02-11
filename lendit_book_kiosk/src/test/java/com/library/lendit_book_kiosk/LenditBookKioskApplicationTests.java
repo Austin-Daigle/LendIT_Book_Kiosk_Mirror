@@ -7,13 +7,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class LenditBookKioskApplicationTests {
 
-	// @RequestMapping("/welcome")
-	// public String welcomepage() {
-	// 	return "Welcome to Yawin Tutor";
-	// }
+
 
 	@Test
 	void contextLoads() {
+		System.out.println("This is just a test......");
 	}
 
 }
