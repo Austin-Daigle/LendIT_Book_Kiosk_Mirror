@@ -21,7 +21,17 @@
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
-		"java.home": "/usr/local/openjdk-11/"
+		"java.home": "/usr/local/openjdk-11/",
+		"sqltools.connections": [{
+			"name": "Container database",
+			"driver": "MySQL",
+			"previewLimit": 50,
+			"server": "127.0.0.1",
+			"port": 3306,
+			"database": "Lendit_Book_Kiosk",
+			"username": "root",
+			"password": "developer"
+		}]
 	},
 	
 	// Add the IDs of extensions you want installed when the container is created.
@@ -32,7 +42,10 @@
 		"ms-azuretools.vscode-docker",
 		"pivotal.vscode-boot-dev-pack",
 		"vscjava.vscode-gradle",
-		"davidanson.vscode-markdownlint"
+		"davidanson.vscode-markdownlint",
+		"dbaeumer.vscode-eslint",
+		"mtxr.sqltools",
+		"mtxr.sqltools-driver-mysql"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

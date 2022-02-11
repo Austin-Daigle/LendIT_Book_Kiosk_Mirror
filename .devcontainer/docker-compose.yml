@@ -23,15 +23,16 @@ services:
     # security_opt:
     #   - seccomp:unconfined
     # Setup web app dependencies
-    depends_on:
-      - db
-    links: 
-      - db
+    # depends_on:
+    #   - db
+    # links: 
+    #   - db
     # Uncomment the next line to use a non-root user for all processes.
     # user: vscode
-    expose:
-      - 80
-      - 8080
+    # expose:
+    #   - 80
+    #   - 8080
+    network_mode: service:db
     # networks:
     #   lamp-network:
     #     ipv4_address: 172.16.238.20     # default gateway  172.16.238.1
@@ -59,16 +60,17 @@ services:
       # MYSQL_ROOT_PASSWORD_FILE: /run/secrets/mysql_secret_pub
       # MYSQL_PASSWORD_FILE: /run/secrets/mysql_secret_key
     volumes:
-      - mysql-data:/var/lib/mysql:cached
+      - mysql-data:/var/lib/mysql
       - ./logs/mysql-log:/var/log:rw
-      #- .\my.cnf:/etc/mysql/conf.d
+      - ./my_conf:/etc/mysql/conf.d
+      - ../sql:/mysql_files
     #restart: "no"
     #restart: always
     restart: on-failure
     #restart: unless-stopped
-    expose:
-      - 3306 
-      - 33060
+    # expose:
+    #   - 3306 
+    #   - 33060
     # ports:
     #   - 3306:3306
       # - 55060:33060
@@ -90,14 +92,14 @@ services:
   adminer:
     image: adminer:latest
     container_name: Lendit_Book_Kiosk-adminer
-    restart: always
-    expose:
-      - 8181
-    depends_on:
-      - db
-    links: 
-      - db
-    command: 'php -S [::]:8181 -t /var/www/html'
+    restart: unless-stopped
+    # expose:
+    #   - 8181
+    # depends_on:
+    #   - db
+    # links: 
+    #   - db
+    # command: 'php -S [::]:8181 -t /var/www/html'
     # - "php"
     # - "-S" 
     # - "[::]:8181"
@@ -106,6 +108,7 @@ services:
     entrypoint: 
     - "entrypoint.sh"
     - "docker-php-entrypoint"
+    network_mode: service:db
 ################################# volumes ###########################
 # since we are using direct access to host directories, we do not need to 
 # declare any virtual volume mounts
