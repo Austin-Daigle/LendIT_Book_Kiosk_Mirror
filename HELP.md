@@ -1,6 +1,10 @@
 # Some Helpful Things
 
-## Merge MAIN with USER branch on a daily basis
+## Daily Update USER Branch
+
+
+***Note: `In order to update your branch to changes in Main branch, you have to Merge the MAIN branch with your USER branch on a daily basis. Run the below command in this order.`***
+
 
 ```bash
 git checkout <user branch name>      # gets you "on branch "
@@ -9,7 +13,7 @@ git merge origin/main
 
 ```
 
-## Dos2Unix OR Unix2Dos
+## Fix Carriage Return Errors with Dos2Unix OR Unix2Dos
 
 unix2dos is a tool to convert line breaks in a text file from Unix format (Line feed) to DOS format (carriage return + Line feed) `"\r"` and vice versa.
 
