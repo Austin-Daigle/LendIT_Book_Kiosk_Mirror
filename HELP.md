@@ -25,3 +25,11 @@ unix2dos <file_name>
 ```
 
 
+## Update submodule .gitmodules
+
+```
+[submodule "Lendit_Book_Kiosk_App"]
+	path = Lendit_Book_Kiosk_App
+	url = https://github.com/dellius-alexander/Lendit_Book_Kiosk_App.git
+```
+
