@@ -1,3 +1,6 @@
 [submodule "lendit_book_kiosk"]
 	path = ./lendit_book_kiosk
 	url = https://github.com/dellius-alexander/Lendit_Book_Kiosk_App.git
+[submodule "lendit_book_kiosk"]
+	path = lendit_book_kiosk
+	url = ./lendit_book_kiosk/.git
