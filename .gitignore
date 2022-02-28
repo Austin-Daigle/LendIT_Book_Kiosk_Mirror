@@ -5,6 +5,7 @@
 ## Visual Paradigm File Rules
 !*.vpp
 *.bak**
+*.vpp**
 ## Binaries ###
 core
 !lendit_book_kiosk/wrapper/gradle-wrapper.jar
