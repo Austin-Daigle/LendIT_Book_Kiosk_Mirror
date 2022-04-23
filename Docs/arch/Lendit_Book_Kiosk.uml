@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>bb22ef0a-0004-49b8-91cd-f7df5c9404d8.SCHEMA:Lendit_Book_Kiosk</OriginalElement>
+  <nodes>
+    <node x="1467.5" y="262.5">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user_student</node>
+    <node x="1923.5" y="471.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.role</node>
+    <node x="-14.5" y="251.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.donated_book</node>
+    <node x="897.0" y="122.5">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.student_majors</node>
+    <node x="1461.5" y="742.5">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user_employee</node>
+    <node x="907.5" y="262.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.student</node>
+    <node x="203.5" y="152.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.book</node>
+    <node x="854.5" y="416.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.borrow_book</node>
+    <node x="1708.0" y="482.5">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user_roles</node>
+    <node x="848.5" y="718.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.fines</node>
+    <node x="902.5" y="-18.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.major</node>
+    <node x="1453.5" y="882.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.employee</node>
+    <node x="1446.0" y="427.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user</node>
+    <node x="467.0" y="262.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.book_copy</node>
+    <node x="1191.5" y="731.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.notification</node>
+    <node x="478.0" y="482.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.kiosk</node>
+    <node x="687.5" y="251.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.reserve_book</node>
+    <node x="-9.5" y="1013.5">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.lendit_book_kiosk_db_sequence_generator</node>
+    <node x="1714.0" y="660.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.secret</node>
+    <node x="1191.5" y="394.0">bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.email_notification</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user_roles" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user" relationship="REFERENCES">
+      <point x="-72.0" y="-0.0" />
+      <point x="94.0" y="-0.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.reserve_book" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.book_copy" relationship="REFERENCES">
+      <point x="-72.5" y="-0.0" />
+      <point x="73.0" y="-0.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.email_notification" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.borrow_book" relationship="REFERENCES">
+      <point x="-88.5" y="-0.0" />
+      <point x="125.5" y="-0.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.kiosk" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.book_copy" relationship="REFERENCES">
+      <point x="0.0" y="-38.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.book_copy" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.book" relationship="REFERENCES">
+      <point x="-73.0" y="-0.0" />
+      <point x="96.5" y="-0.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.email_notification" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.notification" relationship="REFERENCES">
+      <point x="0.0" y="126.0" />
+      <point x="0.0" y="-49.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.borrow_book" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.kiosk" relationship="REFERENCES">
+      <point x="-125.5" y="-0.0" />
+      <point x="62.0" y="-0.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user_roles" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.role" relationship="REFERENCES">
+      <point x="72.0" y="-0.0" />
+      <point x="-96.5" y="-0.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user_employee" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.employee" relationship="REFERENCES">
+      <point x="0.0" y="37.5" />
+      <point x="0.0" y="-38.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.reserve_book" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.student" relationship="REFERENCES">
+      <point x="72.5" y="-0.0" />
+      <point x="-72.5" y="-0.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.student_majors" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.student" relationship="REFERENCES">
+      <point x="0.0" y="37.5" />
+      <point x="0.0" y="-38.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.donated_book" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.book" relationship="REFERENCES">
+      <point x="74.5" y="-0.0" />
+      <point x="-96.5" y="-0.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.borrow_book" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.student" relationship="REFERENCES">
+      <point x="0.0" y="-104.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.email_notification" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user" relationship="REFERENCES">
+      <point x="88.5" y="-0.0" />
+      <point x="-94.0" y="-0.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.secret" relationship="REFERENCES">
+      <point x="20.0" y="93.0" />
+      <point x="1560.0" y="720.0" />
+      <point x="-106.0" y="-0.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user_employee" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user" relationship="REFERENCES">
+      <point x="0.0" y="-37.5" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.fines" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.borrow_book" relationship="REFERENCES">
+      <point x="0.0" y="-82.0" />
+      <point x="0.0" y="104.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user_student" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user" relationship="REFERENCES">
+      <point x="0.0" y="37.5" />
+      <point x="0.0" y="-93.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.student_majors" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.major" relationship="REFERENCES">
+      <point x="0.0" y="-37.5" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.user_student" target="bb22ef0a-0004-49b8-91cd-f7df5c9404d8.TABLE:Lendit_Book_Kiosk.student" relationship="REFERENCES">
+      <point x="-72.5" y="-0.0" />
+      <point x="72.5" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Orthogonal Groups" zoom="0.8642533936651584" showDependencies="false" x="1051.0" y="524.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
