@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>643fdb3b-1dee-4971-85cb-7c62c5037664.SCHEMA:Lendit_Book_Kiosk</OriginalElement>
+  <nodes>
+    <node x="286.0" y="1127.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user</node>
+    <node x="1058.0" y="722.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.kiosk</node>
+    <node x="607.5" y="-17.5">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user_student</node>
+    <node x="-9.5" y="1513.5">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.lendit_book_kiosk_db_sequence_generator</node>
+    <node x="2042.0" y="353.5">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.department</node>
+    <node x="554.5" y="656.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.borrow_book</node>
+    <node x="122.5" y="342.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.major</node>
+    <node x="291.5" y="451.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.notification</node>
+    <node x="1782.0" y="331.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.course</node>
+    <node x="548.5" y="958.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.fines</node>
+    <node x="1285.5" y="51.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.donated_book</node>
+    <node x="763.5" y="1171.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.role</node>
+    <node x="827.5" y="331.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.reserve_book</node>
+    <node x="541.5" y="1362.5">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user_employee</node>
+    <node x="1047.0" y="342.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.book_copy</node>
+    <node x="291.5" y="634.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.email_notification</node>
+    <node x="1520.5" y="342.5">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.course_books</node>
+    <node x="1266.5" y="232.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.book</node>
+    <node x="773.5" y="1362.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.employee</node>
+    <node x="-6.0" y="1160.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.secret</node>
+    <node x="548.0" y="1182.5">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user_roles</node>
+    <node x="607.5" y="342.0">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.student</node>
+    <node x="357.0" y="342.5">643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.student_majors</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.email_notification" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.borrow_book" relationship="REFERENCES">
+      <point x="88.5" y="-0.0" />
+      <point x="-125.5" y="-0.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.course_books" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.course" relationship="REFERENCES">
+      <point x="99.5" y="-0.0" />
+      <point x="-98.0" y="-0.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user_employee" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user" relationship="REFERENCES">
+      <point x="-78.5" y="-0.0" />
+      <point x="400.0" y="1400.0" />
+      <point x="20.0" y="93.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.donated_book" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.book" relationship="REFERENCES">
+      <point x="0.0" y="49.0" />
+      <point x="0.0" y="-148.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user_roles" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.role" relationship="REFERENCES">
+      <point x="72.0" y="-0.0" />
+      <point x="-96.5" y="-0.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.kiosk" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.book_copy" relationship="REFERENCES">
+      <point x="0.0" y="-38.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.email_notification" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.notification" relationship="REFERENCES">
+      <point x="0.0" y="-126.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user_employee" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.employee" relationship="REFERENCES">
+      <point x="78.5" y="-0.0" />
+      <point x="-86.5" y="-0.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.book_copy" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.book" relationship="REFERENCES">
+      <point x="73.0" y="-0.0" />
+      <point x="-93.5" y="-0.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.reserve_book" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.student" relationship="REFERENCES">
+      <point x="-72.5" y="-0.0" />
+      <point x="72.5" y="-0.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.borrow_book" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.kiosk" relationship="REFERENCES">
+      <point x="125.5" y="-0.0" />
+      <point x="-62.0" y="-0.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.student_majors" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.major" relationship="REFERENCES">
+      <point x="-83.0" y="-0.0" />
+      <point x="77.5" y="-0.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.borrow_book" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.student" relationship="REFERENCES">
+      <point x="0.0" y="-104.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.secret" relationship="REFERENCES">
+      <point x="-94.0" y="-0.0" />
+      <point x="106.0" y="-0.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user_student" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.student" relationship="REFERENCES">
+      <point x="0.0" y="37.5" />
+      <point x="0.0" y="-38.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user_roles" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user" relationship="REFERENCES">
+      <point x="-72.0" y="-0.0" />
+      <point x="94.0" y="-0.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.fines" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.borrow_book" relationship="REFERENCES">
+      <point x="0.0" y="-82.0" />
+      <point x="0.0" y="104.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.reserve_book" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.book_copy" relationship="REFERENCES">
+      <point x="72.5" y="-0.0" />
+      <point x="-73.0" y="-0.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.course" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.department" relationship="REFERENCES">
+      <point x="98.0" y="-0.0" />
+      <point x="-98.0" y="-0.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user_student" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user" relationship="REFERENCES">
+      <point x="72.5" y="-0.0" />
+      <point x="2260.0" y="20.0" />
+      <point x="2260.0" y="1460.0" />
+      <point x="380.0" y="1460.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.student_majors" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.student" relationship="REFERENCES">
+      <point x="83.0" y="-0.0" />
+      <point x="-72.5" y="-0.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.course_books" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.book" relationship="REFERENCES">
+      <point x="-99.5" y="-0.0" />
+      <point x="93.5" y="-0.0" />
+    </edge>
+    <edge source="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.email_notification" target="643fdb3b-1dee-4971-85cb-7c62c5037664.TABLE:Lendit_Book_Kiosk.user" relationship="REFERENCES">
+      <point x="0.0" y="126.0" />
+      <point x="0.0" y="-93.0" />
+    </edge>
+  </edges>
+  <settings layout="Orthogonal Groups" zoom="0.5950155763239875" showDependencies="false" x="1125.0" y="774.5000000000001" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
